@@ -1,21 +1,17 @@
 import React from "react";
-import Tippy from "@tippy.js/react";
+import { Tooltip } from "react-tippy";
 
 import "./App.css";
-import "tippy.js/dist/tippy.css";
+import "react-tippy/dist/tippy.css";
 
-const ColoredTooltip = () => {
-  return <span style={{ color: "red" }}>Colored component</span>;
-};
-
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <div style={{ paddingBottom: "200px" }}>
-        <Tippy content={<ColoredTooltip></ColoredTooltip>}>
-          "Dont Press">
-          <button>CLICK ME</button>
-        </Tippy>
+      {console.log(props.position)}
+      <div style={{ paddingTop: "50vh" }}>
+        <Tooltip title="Dont Press" position={props.position}>
+          <button class="press">PRESS</button>
+        </Tooltip>
       </div>
     </div>
   );

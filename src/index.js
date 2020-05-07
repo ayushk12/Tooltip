@@ -5,7 +5,7 @@ import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App position="bottom" />
   </React.StrictMode>,
   document.getElementById("root")
 );
