@@ -2,7 +2,7 @@
 A tooltip is often used to specify extra information about something when the user 
 moves the mouse pointer over an element:top,right,bottom,left
 
-#Getting Started
+<mark>Getting Started </mark>
  npm i react-tippy
  
 #How to use
